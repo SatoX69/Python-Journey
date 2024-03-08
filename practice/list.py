@@ -32,3 +32,16 @@ array.reverse()  # Reverses the array backwards
 
 # Misc
 print(len(array))  # Prints the length of the array
+
+# Slicing Syntax
+people = ["Donald", "Biden", "Obama", "Churchill", "Lincoln", "Jovan", "TJ"]
+print(people[1:5]) # Biden - Lincoln
+print(people[:3]) # Start - Obama
+print(people[4:]) # Churchill - End
+
+# Copying Syntax
+my_figures = ["Micheal Jackson", "Davidson", "Jesus"]
+print(f"I know {my_figures}")
+friend_likings = my_figures[:]
+friend_likings.append("Walter White")
+print(f"My friend loves {friend_likings}")

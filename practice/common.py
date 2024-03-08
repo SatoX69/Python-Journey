@@ -32,3 +32,17 @@ print(f"{name_with_space} is my good friend.")
 x, y, z = "XYZ" # Each letter is the value of the corresponding variable at its position
 
 x, y, z = ["First", "Second", "Third"]
+
+
+# For exponents, use 2 asterisks (**)
+print(10 ** 2)
+
+
+# Common methods 1
+digits = [0, 3, 1, 7, 8, 5, 4, 9, 12, 17] # And so on
+print(max(digits))
+print(min(digits))
+print(sum(digits))
+
+exp = [x ** 2 for x in range(2, 13)]
+print(exp)

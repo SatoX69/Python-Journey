@@ -7,3 +7,5 @@ for name in names:
   print(f"I love {name.title()}")
   
  print("I love them all") # This is outside of the looping block
+ 
+ 
