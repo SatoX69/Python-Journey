@@ -30,5 +30,5 @@ value = array.pop()  # Gets the value of the last item in the array and can addi
 array.remove("Asia")  # Removes the provided item (Only the first occurrence)
 array.reverse()  # Reverses the array backwards
 
-# Miscellaneous
+# Misc
 print(len(array))  # Prints the length of the array

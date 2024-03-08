@@ -27,3 +27,8 @@ print(name_with_space)
 name_with_space = name_with_space.title()
 # Black space trimmed out
 print(f"{name_with_space} is my good friend.")
+
+# Multiple Destructuring
+x, y, z = "XYZ" # Each letter is the value of the corresponding variable at its position
+
+x, y, z = ["First", "Second", "Third"]
