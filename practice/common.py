@@ -12,6 +12,7 @@ print(string)
 integer = 10
 string = "10"
 floating_point = 10.00
+boolean = True
 #etc
 
 
