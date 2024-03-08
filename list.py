@@ -26,7 +26,7 @@ array.append("London")  # Append London at the end
 array.insert(2, "Toronto")  # Inserts Toronto at position 2
 array.pop()  # Pops the last item of the array and can additionally take an index param to pop that item
 value = array.pop()  # Gets the value of the last item in the array and can additionally take an index param to get the item at that index
-# Note: The variable declared `poo()` is a little different from the undeclared explicit `pop()` since it doesn't actually pop the last item but instead gets the value of the last or provided index item
+# Note: The variable declared `pop()` is a little different from the undeclared explicit `pop()` since it doesn't actually pop the last item but instead gets the value of the last or provided index item
 array.remove("Asia")  # Removes the provided item (Only the first occurrence)
 array.reverse()  # Reverses the array backwards
 
