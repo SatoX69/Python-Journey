@@ -25,3 +25,28 @@ print("bmw" in vehicles)
 
 if "Delta" not in vehicles:
     print("Delta not found")
+    
+    
+    
+attractive = True
+person_age = 19
+
+if person_age >= 18:
+    message = "Smashable"
+elif person_age < 18:
+    message = "They are a kid"
+elif person_age >= 18 and attractive:
+    message = "Smash" # Won't work for if-elif syntax
+print(message)
+
+
+# Rectified snippet
+if person_age >= 18:
+    message = "Smashable"
+if person_age < 18:
+    message = "They are a kid"
+if person_age >= 18 and attractive:
+    message = "Smash"
+print(message)
+
+# If-elif stops once the conditions are true on the first instance, contrary to theatter snippet which checks for condition and message the message and prints the last overwritten value
