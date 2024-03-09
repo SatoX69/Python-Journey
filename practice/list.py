@@ -45,3 +45,5 @@ print(f"I know {my_figures}")
 friend_likings = my_figures[:]
 friend_likings.append("Walter White")
 print(f"My friend loves {friend_likings}")
+
+del people[1]
