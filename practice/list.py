@@ -47,3 +47,8 @@ friend_likings.append("Walter White")
 print(f"My friend loves {friend_likings}")
 
 del people[1]
+
+# Extend
+
+my_figures.extend(people)
+print(my_figures) # Appends all of the items of people into my_figures list
