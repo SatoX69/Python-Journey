@@ -35,17 +35,22 @@ class Prodia:
                 response = req.get(f"https://api.prodia.com/job/{self.jobID}")
                 status = response.json()
                 if status["status"] == "generating":
-                    time.sleep(5)
+                    time.sleep(.5)
                     print(f"Status: Generating, Polling Once More")
                     continue
                 elif status["status"] == "succeeded":
-                    return f"https://images.prodia.xyz/{self.jobID}.png?download=1"
+                    return f"https://images.prodia.xyz/{self.jobID}.png"
                 else:
                     raise Error("Unexpected status when polling")   
         except Error as e:
             print("Error Occurred")
             print(e)
 
-x = Prodia(prompt="Pretty girl, cute")
-result = x.generate_image()
-print(result)
+while True:
+  prompt = input("Prompt: ")
+  if not prompt:
+    print("No Prompt Provided, Breaking Loop")
+    break
+  x = Prodia(prompt=prompt)
+  result = x.generate_image()
+  print(result)
