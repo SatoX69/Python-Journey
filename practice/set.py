@@ -22,11 +22,18 @@ x.discard("World")
 # To merge two sets, use the update method
 y.update(x)
 
-# Update set 'x' with the elements of set 'y' - This will merge the sets
-x.update(y)
+# Update set 'x' with the elements of set 'y' using the union method
+x.union(y)
 
 # Clear all elements from set 'x'
 x.clear()
 
 # Delete set 'x' - This removes the entire variable from memory
 del x
+
+
+""" More methods here:
+https://www.w3schools.com/python/python_sets_methods.asp
+
+https://www.w3schools.com/python/python_sets_join.asp
+"""
